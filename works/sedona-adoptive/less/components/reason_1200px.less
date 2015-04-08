@@ -1,0 +1,79 @@
+@media (min-width: 1200px) {
+  .reason {
+    margin-bottom:0;
+    font-size:0;
+
+    &__col--white {
+      padding:58px 5% 88px 4%;
+      width:33.3334%;
+      box-sizing:border-box;
+      display:inline-block;
+      vertical-align:top;
+      text-align:center;
+      position:relative;
+      color:@black;
+      background:@white;
+    }
+
+    &__img {
+      max-width:100%;
+      height:auto;
+      float:none;
+      margin:0 0 15px 0;
+    }
+
+    &__title {
+      margin:0 0 26px 0;
+      font-size:21px;
+    }
+
+    &__number {
+      display:block;
+      margin:0 0 10px 0;
+      font-size:@font-size;
+    }
+
+    &__text {
+      margin:0;
+      font-size:@font-size;
+    }
+
+    &__col--grey {
+      padding:48px 6% 67px 6%;
+      width:33.3334%;
+      box-sizing:border-box;
+      display:inline-block;
+      vertical-align:top;
+      text-align:center;
+      color:@black;
+      background:@grey;
+
+      .reason__title {
+        //если написать &__title - описание не работает
+        margin:0 0 10px 0;
+        padding:0 20%;
+        font-size:21px;
+        line-height:26px;
+      }
+
+      .reason__number {
+        //тоже самое
+        display:block;
+        margin:0 0 21px 0;
+      }
+
+      .reason__text {
+        //тоже самое
+        padding:0;
+        margin:0;
+        border-bottom:none;
+      }
+    }
+
+    &__col--grey:nth-child(3) {
+      .reason__text {
+        border-bottom:0;
+      }
+    }
+  }
+}

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Familon</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>
+  <body class="body-main">
+    <div class="wrapper clearfix">
+      <header class="page-header">
+        <div class="upper-menu  clearfix">
+          <nav class="upper-menu-nav">
+            <ul class="upper-menu-nav__list"> 
+              <li class="upper-menu-nav__item"><a href="#">Оплта и условия доставки</a></li>
+              <li class="upper-menu-nav__item"><a href="#">Контакты офиса</a></li>
+              <li class="upper-menu-nav__item"><a href="#">Адреса Магазинов</a></li>
+            </ul>
+          </nav>
+          <div class="upper-menu__phone">
+            <i class="icon-phone"></i><a href="tel:+78003334322">8 800 333 43 22</a>
+          </div>
+        </div>
+        <div class="center-menu  clearfix">
+          <a href="index.html" class="center-menu__logo">
+            <img src="img/logo.png" width="322" height="54" alt="Familon">
+          </a>
+          <form action="/echo" method="post" class="search">
+            <input class="search__good" type="text" placeholder="Поиск товара">
+            <input class="search__btn" type="submit" value="Найти">
+          </form>
+          <div class="cart">
+            <img class="cart__img" src="img/cart.png" width="43" height="50" alt="Корзина">
+            <div class="cart__item-result">Товаров в корзине:<span>27</span></div>
+            <div class="cart__price-result">На сумму:<span> 77 456 руб.</span></div>
+            <a href="#" class="cart__btn-order">Оформить заказ</a>
+          </div>
+        </div>
+        <nav class="main-menu-nav">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__item--bedclothes" href="#">
+                <span class="main-menu__item--label">Постельное белье</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item--pillow" href="#">
+                  <span class="main-menu__item--label">Подушки и одеяла</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item--bathroom" href="#">
+                  <span class="main-menu__item--label">Ванная</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a  class="main-menu__item--kitchen" href="#">
+                  <span class="main-menu__item--label">Кухня</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item--interior" href="#">
+                  <span class="main-menu__item--label">Интерьер</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item--kid" href="#">
+                  <span class="main-menu__item--label">Для детей</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item--pro" href="#">
+                  <span class="main-menu__item--label">Pro</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item--new" href="#">
+                  <span class="main-menu__item--label">Новинки</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__item--discount" href="#">
+                <span class="main-menu__item--label">Скидки</span>
+              </a>
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item  sub-menu__item-one">
+                  <ul>
+                    <li><a href="#">1,5-спальные комплекты</a></li>
+                    <li><a href="#">2-спальные комплекты</a></li>
+                    <li><a href="#">Семейные комплекты</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item  sub-menu__item-two">
+                  <ul>
+                    <li><a href="#">Дизайнерские проекты</a></li>
+                    <li><a href="#">Простыни</a></li>
+                    <li><a href="#">Простыние на резинке</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu__item sub-menu__item-three">
+                  <ul>
+                    <li><a href="#">Наволочки</a></li>
+                    <li><a href="#">Пододеяльники</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="slider">
+          <ul class="bxslider">
+            <li>
+              <img src="img/banner-background.jpg" width="880" height="487" alt="Баннер">
+              <div class="slide-title">Заголовок баннера</div>
+              <p class="slide-text">Текст баннера</p>
+            </li>
+            <li>
+              <img src="img/banner-background.jpg" width="880" height="487" alt="Баннер">
+              <div class="slide-title">Другой заголовок</div>
+              <p class="slide-text">Другой текст баннера</p>
+            </li>
+          </ul>
+        </section>
+        <section class="content-top">
+        <div class="content-top-title">Лидеры продаж</div>
+        <div class="carousel">
+          <div class="carousel__control carousel__control_direction_next"></div>
+          <div class="carousel__viewport">
+            <div class="carousel__list" style="left: 0;">
+              <div class="carousel__item">
+                <div class="carousel__item-image">
+                  <a href="#">
+                    <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                  </a>
+                </div>
+                <div class="carousel__item-description">
+                  <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                </div>
+                <div class="carousel__item-actions"> 
+                  <span class="carousel__item-actions--price">790 руб.</span>
+                  <a href="#" class="carousel__item-actions--buy">Купить</a>
+                </div> 
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__item-image">
+                  <a href="#">
+                    <img src="img/toy-red-elephant.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                  </a>
+                </div>
+                <div class="carousel__item-description">
+                  <a href="#">Декоративная подушка Elefantti 42x30 см, красная</a>
+                </div>
+                <div class="carousel__item-actions"> 
+                  <span class="carousel__item-actions--price">400 руб.</span>
+                  <a href="#" class="carousel__item-actions--buy">Купить</a>
+                </div> 
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__item-image">
+                  <a href="#">
+                    <img src="img/blanket-grey.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                  </a>
+                </div>
+                <div class="carousel__item-description">
+                  <a href="#">Однотонное полотенце Carl 90x180 см, бежевое</a>
+                </div>
+                <div class="carousel__item-actions"> 
+                  <span class="carousel__item-actions--price">1820 р.</span>
+                  <a href="#" class="carousel__item-actions--buy">Купить</a>
+                </div> 
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__item-image">
+                  <a href="#">
+                    <img src="img/pillow-red.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                  </a>
+                </div>
+                <div class="carousel__item-description">
+                  <a href="#">Декоративная подушка Aika 52x52 см, красная</a>
+                </div>
+                <div class="carousel__item-actions"> 
+                  <span class="carousel__item-actions--price">915 руб.</span>
+                  <a href="#" class="carousel__item-actions--buy">Купить</a>
+                </div> 
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__item-image">
+                  <a href="#">
+                    <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                  </a>
+                </div>
+                <div class="carousel__item-description">
+                  <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                </div>
+                <div class="carousel__item-actions"> 
+                  <span class="carousel__item-actions--price">790 р.</span>
+                  <a href="#" class="carousel__item-actions--buy">Купить</a>
+                </div> 
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__item-image">
+                  <a href="#">
+                    <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                  </a>
+                </div>
+                <div class="carousel__item-description">
+                  <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                </div>
+                <div class="carousel__item-actions"> 
+                  <span class="carousel__item-actions--price">790 р.</span>
+                  <a href="#" class="carousel__item-actions--buy">Купить</a>
+                </div> 
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__item-image">
+                  <a href="#">
+                    <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                  </a>
+                </div>
+                <div class="carousel__item-description">
+                  <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                </div>
+                <div class="carousel__item-actions"> 
+                  <span class="carousel__item-actions--price">790 р.</span>
+                  <a href="#" class="carousel__item-actions--buy">Купить</a>
+                </div> 
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__item-image">
+                  <a href="#">
+                    <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                  </a>
+                </div>
+                <div class="carousel__item-description">
+                  <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                </div>
+                <div class="carousel__item-actions"> 
+                  <span class="carousel__item-actions--price">790 р.</span>
+                  <a href="#" class="carousel__item-actions--buy">Купить</a>
+                </div> 
+              </div>
+            </div> 
+          </div>
+        </div>
+        </section>
+        <section class="content-current">
+          <div class="content-current-title">Текущее предложение</div>
+          <div class="carousel">
+            <div class="carousel__control carousel__control_direction_next"></div>
+            <div class="carousel__viewport">
+              <div class="carousel__list" style="left: 0;">
+                <div class="carousel__item">
+                  <div class="carousel__item-image">
+                    <a href="#">
+                      <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                    </a>
+                  </div>
+                  <div class="carousel__item-description">
+                    <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                  </div>
+                  <div class="carousel__item-actions"> 
+                    <span class="carousel__item-actions--price">790 руб.</span>
+                    <a href="#" class="carousel__item-actions--buy">Купить</a>
+                  </div> 
+                </div>
+                <div class="carousel__item">
+                  <div class="carousel__item-image">
+                    <a href="#">
+                      <img src="img/toy-red-elephant.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                    </a>
+                  </div>
+                  <div class="carousel__item-description">
+                    <a href="#">Декоративная подушка Elefantti 42x30 см, красная</a>
+                  </div>
+                  <div class="carousel__item-actions"> 
+                    <span class="carousel__item-actions--price">400 руб.</span>
+                    <a href="#" class="carousel__item-actions--buy">Купить</a>
+                  </div> 
+                </div>
+                <div class="carousel__item">
+                  <div class="carousel__item-image">
+                    <a href="#">
+                      <img src="img/blanket-grey.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                    </a>
+                  </div>
+                  <div class="carousel__item-description">
+                    <a href="#">Однотонное полотенце Carl 90x180 см, бежевое</a>
+                  </div>
+                  <div class="carousel__item-actions"> 
+                    <span class="carousel__item-actions--price">1820 р.</span>
+                    <a href="#" class="carousel__item-actions--buy">Купить</a>
+                  </div> 
+                </div>
+                <div class="carousel__item">
+                  <div class="carousel__item-image">
+                    <a href="#">
+                      <img src="img/pillow-red.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                    </a>
+                  </div>
+                  <div class="carousel__item-description">
+                    <a href="#">Декоративная подушка Aika 52x52 см, красная</a>
+                  </div>
+                  <div class="carousel__item-actions"> 
+                    <span class="carousel__item-actions--price">915 руб.</span>
+                    <a href="#" class="carousel__item-actions--buy">Купить</a>
+                  </div> 
+                </div>
+                <div class="carousel__item">
+                  <div class="carousel__item-image">
+                    <a href="#">
+                      <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                    </a>
+                  </div>
+                  <div class="carousel__item-description">
+                    <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                  </div>
+                  <div class="carousel__item-actions"> 
+                    <span class="carousel__item-actions--price">790 р.</span>
+                    <a href="#" class="carousel__item-actions--buy">Купить</a>
+                  </div> 
+                </div>
+                <div class="carousel__item">
+                  <div class="carousel__item-image">
+                    <a href="#">
+                      <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                    </a>
+                  </div>
+                  <div class="carousel__item-description">
+                    <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                  </div>
+                  <div class="carousel__item-actions"> 
+                    <span class="carousel__item-actions--price">790 р.</span>
+                    <a href="#" class="carousel__item-actions--buy">Купить</a>
+                  </div> 
+                </div>
+                <div class="carousel__item">
+                  <div class="carousel__item-image">
+                    <a href="#">
+                      <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                    </a>
+                  </div>
+                  <div class="carousel__item-description">
+                    <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                  </div>
+                  <div class="carousel__item-actions"> 
+                    <span class="carousel__item-actions--price">790 р.</span>
+                    <a href="#" class="carousel__item-actions--buy">Купить</a>
+                  </div> 
+                </div>
+                <div class="carousel__item">
+                  <div class="carousel__item-image">
+                    <a href="#">
+                      <img src="img/blanket-mummies-troll.jpg" width="164" height="125" alt="Коврик для ванной Muumi, 50x80 см, синий">
+                    </a>
+                  </div>
+                  <div class="carousel__item-description">
+                    <a href="#">Коврик для ванной Muumi, 50x80 см, синий</a>
+                  </div>
+                  <div class="carousel__item-actions"> 
+                    <span class="carousel__item-actions--price">790 р.</span>
+                    <a href="#" class="carousel__item-actions--buy">Купить</a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="carousel__border-bottom"></div>
+          </div>
+        </section>
+        <div class="banner-group clearfix">
+          <a href="#" class="banner-group__item-big"><img src="img/banner-3-1.jpg" width="879" height="506" alt="Как часто вы меняете постельные принадлежности?"></a>
+          <a href="#" class="banner-group__item-small--left"><img src="img/banner-3-2.jpg" width="428" height="359" alt="А ваше утро было добрым?"></a>
+          <a href="#" class="banner-group__item-small--right"><img src="img/banner-3-3.jpg" width="429" height="359" alt="Как выбрать полотенце?"></a>
+        </div>
+      </main>
+      <footer class="page-footer clearfix">
+        <div class="banner">
+          <ul class="banner__list">
+            <li class="banner__item"><a href="#" class="payment--method assist"></a></li>
+            <li class="banner__item"><a href="#" class="visa"></a></li>
+            <li class="banner__item"><a href="#" class="visa-electron"></a></li>
+            <li class="banner__item"><a href="#" class="maestro"></a></li>
+            <li class="banner__item"><a href="#" class="master-card"></a></li>
+            <li class="banner__item"><a href="#" class="yandex-money"></a></li>
+            <li class="banner__item"><a href="#" class="web-money"></a></li>
+            <li class="banner__item"><a href="#" class="rus-bank"></a></li>
+            <li class="banner__item"><a href="#" class="sberbank"></a></li>
+            <li class="banner__item"><a href="#" class="russia-post"></a></li>
+          </ul>
+        </div>
+        <div class="page-footer__info-menu clearfa href="#"
+          <span>Бесплатный звонок</span>
+          <i class="icon-phone"></i><a href="tel:+78003334322" class="page-footer__phone-number">8 800 333 43 22</a>
+          <p class="page-footer__text--small">звонок бесплатый со всех<br>номеров России</p>
+          <p class="page-footer__text">График работы справочной службы:<br>10:00-17:00 Пн-Пт, Сб-Вс выходные</p>
+          <a href="#" class="page-footer__shop-contacts">shop@finlayson.ru</a>
+        </div>
+        <div class="page-footer__menu-left">
+          <a href="#">Оплата и условия доставки</a>
+          <a href="#">Резквизиты и контакты</a>
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Возврат и обмен</a>
+          <a href="#">Карта сайта</a>
+        </div>
+        <div class="page-footer__menu-right">
+          <a href="#">Открыть корзину</a>
+          <a href="#">Оформить заказ</a>
+          <a href="#">Инструкция по уходу</a>
+          <a href="#">Сертификаты</a>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.carousel.js"></script>
+    <!-- Important: needs exactly this version for bxslider. -->
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
+        $(document).ready(function() {
+            $('.bxslider').bxSlider({
+              pager:false, 
+              speed:1000,
+              auto: true
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('fontello.eot?90749670');
+  src: url('fontello.eot?90749670#iefix') format('embedded-opentype'),
+       url('fontello.woff?90749670') format('woff'),
+       url('fontello.ttf?90749670') format('truetype'),
+       url('fontello.svg?90749670#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+     
+  line-height: 1em;
+
+}
+
+.icon-vkontakte:before { content: '\e800'; }
+.icon-github-circled:before { content: '\e801'; }
+.icon-post:before { content: '\e802'; }
+.icon-yandex:before { content: '\e803'; }
+.icon-codepen:before { content: '\e804'; }
+.icon-twitter:before { content: '\e805'; }

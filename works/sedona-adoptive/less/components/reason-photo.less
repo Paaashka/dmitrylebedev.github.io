@@ -1,0 +1,59 @@
+.reason-photo:nth-child(1):before {
+  content:"";
+  width:@width;
+  min-height:37px;
+  position:absolute;
+  top:-1px;
+  left:0;
+  z-index:10;
+  background:url("../img/white-stripe-2.png") no-repeat center;
+  background-size:100% 100%;
+}
+
+.reason-photo:nth-child(1) {
+  padding-top:33px;
+}
+
+.reason-photo {
+  position:relative;
+  text-align:center;
+  background:@blue;
+
+  &__col-blue {
+    display:inline-block;
+    vertical-align:top;
+    padding:45px 9% 40px 9%;
+    text-align:center;
+    background:@blue;
+  }
+
+  &__title {
+    margin:0 0 12px 0;
+    font-size:@font-size--h2;
+  }
+
+  &__number {
+    display:block;
+    margin:0 0 15px 0;
+  }
+
+  &__text {
+    margin:0;
+  }
+
+  &__col-img-house {
+    min-height:256px;
+    background:url("@{img}/photo-city@1x.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:100% auto;
+  }
+
+  &__col-img-desert {
+    min-height:256px;
+    background:url("@{img}/photo-bridge@1x.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:100% auto;
+  }
+}

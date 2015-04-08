@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">  
+      <header class="main-header">
+        <nav class="main-menu">
+          <ul class="menu-list clearfix">
+            <li class='menu-item'><a class="main-menu-active" href="index.html">ИНФОРМАЦИЯ</a></li>
+            <li class='menu-item'><a href="hotels.html">ФОТО И ВИДЕО</a></li>
+            <li class='menu-item'><a class="logo" href="index.html"><img src="img/logo.png" alt="Логотип" width="138" height="70"></a></li>
+            <li class='menu-item'><a href="#">КАРТА ШТАТА</a></li>
+            <li class='menu-item'><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="intro clearfix">
+          <div class="text-welcome"><img src="img/text-welcome.png" alt="welcome" width="255" height="85"></div>
+          <div class="text-sedona"><img src="img/text-sedona.png" alt="sedona" width="456" height="78"></div>
+          <div class="text-because"><img src="img/text-because.png" alt="because" width="300" height="85"></div>
+        </div>
+        <section class="about-title">
+          <h1>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+          ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+          <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
+        </section>
+        <section class="reason-photo-section">
+          <div class="col col-33 col-blue">
+            <h2>НАСТОЯЩИЙ<br>ГОРОДОК</h2>
+            <span class="column-number">— №1 —</span>
+            <p>СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>
+            ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+          </div>
+          <div class="col col-66 col-img-house"></div>
+        </section>
+        <section class="reason-section">
+          <div class="col col-33 col-white">
+            <div class="column-type column-type-house"></div>
+            <h2>ЖИЛЬЁ</h2>
+            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>
+            МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+          </div>
+          <div class="col col-33 col-white">
+            <div class="column-type column-type-foot"></div>
+            <h2>ЕДА</h2>
+            <p>ВСЕГДА ЗАКАЗЫВАЙ ФИРМЕННЫЙ БУРГЕР,<br>
+            ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+          </div>
+          <div class="col col-33 col-white">
+            <div class="column-type column-type-souvenir"></div>
+            <h2>СУВЕНИРЫ</h2>
+            <p>НЕ ТОЛЬКО КИТАЙСКОГО,<br>
+            НО И МЕСТНОГО ПРОИЗВОДСТВА</p>
+          </div>
+        </section>
+        <section class="reason-photo-section">
+          <div class="col col-66 col-img-desert"></div>
+          <div class="col col-33 col-blue">
+            <h2>ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h2>
+            <span class="column-number">— №2 —</span>
+            <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ!<br>
+            ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+          </div>
+        </section>
+        <section class="reason-section section-grey">
+          <div class="col col-33 col-grey">
+            <div class="column-type-house"></div>
+            <h2>НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h2>
+            <span class="column-number">— №3 —</span>
+            <p>ВСЕ ДОСТОПРИМЕЧА-<br>
+            ТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </div>
+          <div class="col col-33 col-grey">
+            <div class="column-type-house"></div>
+            <h2>КРАСИВАЯ<br>ДОРОГА</h2>
+            <span class="column-number">— №4 —</span>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>
+            НЕ СКУЧНО!</p>
+          </div>
+          <div class="col col-33 col-grey">
+            <div class="column-type-house"></div>
+            <h2>МАЛО<br>ТУРИСТОВ</h2>
+            <span class="column-number">— №5 —</span>
+            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И<br>
+            ТОЛПИТСЯ ТАМ</p>
+          </div>
+        </section>
+        <section class="search-form-section">
+          <h2>ЗАИНТЕРСОВАЛИСЬ?</h2>
+          <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+          <a href="#" class="search-form-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <form class="form-search" action="/echo" method="post">
+            <fieldset class="date-travel">
+              <label class="date-arrival">ДАТА ЗАЕЗДА:</label>
+              <i class="icon-calendar"></i>
+              <input type="date" name="date" value="2014-04-24">
+            </fieldset>
+            <fieldset class="date-travel">
+              <label class="date-departure">ДАТА ВЫЕЗДА:</label>
+              <i class="icon-calendar"></i>
+              <input type="date" name="date" value="2014-07-04">
+            </fieldset>
+            <fieldset class="half-width">
+              <label class="adult">ВЗРОСЛЫЕ:</label><button class="icon-minus"></button><input type="number" min="0" max="10" value="2"><button class="icon-plus"></button>
+            </fieldset>
+            <fieldset class="half-width">
+              <label class="children">ДЕТИ:</label><button class="icon-minus"></button><input type="number" min="0" max="10" value="0"><button class="icon-plus"></button>
+            </fieldset>
+            <fieldset class"search-submit"><input class="btn-search btn-blue" type="submit" value="НАЙТИ"></fieldset>
+          </form>
+        </section>
+        <section class='map'>
+          <div id='map' class='yandexmap'></div>
+        </section>
+      </main>
+      <footer class="main-footer page-footer">
+        <div class="block-footer block-visit col-33">
+          <a href="#" class="visit-sedona">#VISITSEDONA</a>
+        </div>
+        <div class="block-footer block-social col-33">
+          <a href='http://vk.com' class="icon-social icon-twitter btn-blue"></a>
+          <a href='https://www.facebook.com' class="icon-social icon-facebook btn-blue"></a>
+          <a href='https://instagram.com' class="icon-social icon-youtube btn-blue"></a>
+        </div>
+        <div class="block-footer block-author col-33">
+          WEBSITE BY
+          <a class="glukhanko-site author-link" href="http://glukhanko.ru"></a>
+          FOR
+          <a class="html-academy-site author-link" href="https://htmlacademy.ru"></a>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zJpf0EOfpwA_j-lsrgpRxgyTQ4RsGzTY&amp;width=&amp;height=&amp;id=map"></script>
+    <script src='js/script.js'></script>
+  </body>
+</html>

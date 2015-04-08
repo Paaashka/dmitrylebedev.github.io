@@ -1,0 +1,75 @@
+.intro {
+  width:@width;
+  position:relative;
+  margin-bottom:5px;
+
+  &__sedona-welcome {
+    max-width:@width;
+    height:390px;
+    position:relative;
+    text-align:center;
+    background-image:url("@{img}/photo-background@1x.jpg");
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-position:50% 14%;
+  }
+
+  &__sedona-welcome:after {
+    content:"";
+    width:@width;
+    height:57px;
+    position:absolute;
+    bottom:-1px;
+    left:0;
+    background:url("@{img}/white-stripe-1.png") no-repeat;
+    background-size:auto;
+    background-position:center top;
+  }
+
+  &__text-welcome {
+    width:142px;
+    height:34px;
+    margin-top:47px;
+    fill:@blue;
+  }
+
+  &__text-tothegorgeous {
+    width:196px;
+    height:23px;
+    margin-top:3px;
+    fill:@brown;
+  }
+
+  &__text-sedona {
+    width:281px;
+    height:52px;
+    margin-top:53px;
+    fill:@white;
+  }
+
+  &__text-because {
+    width:197px;
+    height:54px;
+    margin-top:59px;
+    fill:@white;
+  }
+
+  &__sedona-about {
+    padding:40px 10% 0 10%;
+    text-align:center;
+    color:@black;
+    background:@white;
+  }
+
+  &__title {
+    margin:0 0 28px 0;
+    font-size:@font-size--h1;
+    line-height:@line-height--h1;
+  }
+
+  &__text {
+    margin:0;
+    font-size:@font-size;
+    line-height:26px;
+  }
+}

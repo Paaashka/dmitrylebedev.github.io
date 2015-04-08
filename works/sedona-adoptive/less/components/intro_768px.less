@@ -1,0 +1,81 @@
+@media (min-width: 768px) and (max-width:1200px) {
+  .intro {
+    width:@width;
+    position:relative;
+    margin-bottom:52px;
+
+    &__sedona-welcome:after {
+      content:"";
+      width:@width;
+      height:37px;
+      position:absolute;
+      bottom:-2px;
+      left:0;
+      background:url("@{img}/white-stripe-1.png") no-repeat;
+      background-size:100% 100%;
+    }
+
+    &__sedona-welcome {
+      max-width:@width;
+      height:512px;
+      margin-bottom:58px;
+      position:relative;
+      text-align:center;
+      background-image:url("@{img}/photo-background@1x.jpg");
+      background-repeat:no-repeat;
+      background-size:auto;
+      background-position:center 0;
+    }
+
+    &__text-welcome {
+      max-width:@width;
+      width:256px;
+      height:auto;
+      margin-top:75px;
+      fill:@blue;
+    }
+
+    &__text-tothegorgeous {
+      max-width:@width;
+      width:256px;
+      height:auto;
+      margin-top:10px;
+      fill:@brown;
+    }
+
+    &__text-sedona {
+      max-width:@width;
+      width:458px;
+      height:auto;
+      margin-top:53px;
+      fill:@white;
+    }
+
+    &__text-because {
+      max-width:@width;
+      width:295px;
+      height:auto;
+      margin-top:47px;
+      fill:@white;
+    }
+
+    &__sedona-about {
+      padding:0 10%;
+      text-align:center;
+      color:@black;
+      background:@white;
+    }
+
+    &__title {
+      margin:0 0 28px 0;
+      font-size:21px;
+      line-height:@line-height--h1;
+    }
+
+    &__text {
+      margin:0;
+      font-size:@font-size;
+      line-height:26px;
+    }
+  }
+}

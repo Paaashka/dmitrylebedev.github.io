@@ -1,0 +1,33 @@
+{
+  "name": "51265-Sedona",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Education project «Sedona» for HTML Academy",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/up-htmlacademy/51265-Sedona.git"
+  },
+  "author": "Лебедев Дмитрий",
+  "bugs": {
+    "url": "https://github.com/up-htmlacademy/51265-Sedona/issues"
+  },
+  "homepage": "https://github.com/up-htmlacademy/51265-Sedona",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-uglify": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-csscomb": "^3.0.0",
+    "grunt-lintspaces": "^0.6.2",
+    "grunt-loadnpmtasks": "^0.3.2",
+    "load-grunt-tasks": "^3.1.0"
+  }
+}

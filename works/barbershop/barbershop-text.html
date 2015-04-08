@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Barbershop Borodinsky</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=latin,cyrillic-ext">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper clearfix">
+        <nav class="top-menu column-left">
+          <ul>
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li class="active"><a href="barbershop-text.html">ПРАЙС-ЛИСТ</a></li>
+            <li><a href="barbershop-goods.html">МАГАЗИН</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+        <div class="account-menu">
+          <a class="login" href="#">ВХОД</a>
+        </div>
+      </div>
+    </header>
+    <div class="modal-content">
+      <div class="modal-content-close">закрыть</div>
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+      <form class="login-form" action="/echo" method="post">
+        <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+        <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Запомните меня</label>
+        <a href="#" class="restore">Я забыл пароль!</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+    </div>
+    <div class="wrapper clearfix">
+      <div class="inner-page-title">
+        <h1 class="title-shop">ПРАЙС-ЛИСТ</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">ГЛАВНАЯ</a></li>
+          <li class="current"><a href="barbershop-text.html">ПРАЙС-ЛИСТ</a></li>
+        </ul>
+      </div>
+      <div class="title-classic"><h2>ИСТИННО МУЖСКАЯ КЛАССИКА</h2></div>
+      <div class="content-columns clearfix">
+        <div class="column-left column-50">
+          <h2 class="index-column-title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br> ЛУЧШИЕ СРЕДСТВА:</h2>
+          <ul class="custom-list">
+            <li>BAXTER OF CALIFORNIA</li>
+            <li>MR NATTY</li>
+            <li>SUAVECITO</li>
+            <li>MALIN+GOETZ</li>
+          </ul>
+        </div>
+        <div class="column-right column-50">
+          <h2 class="index-column-title">ЦЕНЫ НА УСЛУГИ<br> НАШИХ МАСТЕРОВ:</h2>
+            <table border="1" class="price-table">
+              <tr>
+                <td>СТРИЖКА</td>
+                <td>1500 Р.</td>
+              </tr>
+              <tr>
+                <td>СТРИЖКА БОРОДЫ</td>
+                <td>500 Р.</td>
+              </tr>
+              <tr>
+                <td>НАКРУТКА УСОВ</td>
+                <td>350 Р.</td>
+              </tr>
+            </table>
+        </div>
+      </div>
+      <div class="common-column clearfix">
+        <h2 class="index-column-title">НЕСКОЛЬКО СЛОВ О НАС:</h2>
+        <div class="column-left column-48"><p class="short-text">НАША ПАИХМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ СТРИЖКАМИ. СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС — ЭТО УНИКАЛЬНАЯ И ПРОДУМАННАЯ ДО МЕЛОЧЕЙ РАБОТА. МЫ НЕ РАБОТАЕМ НА КОЛИЧЕСТВО, МЫ ДЕЛАЕМ КАЧЕСТВО.</p></div>
+        <div class="column-right column-48"><p class="short-text">НАША МАСТЕРСКАЯ РАСПОЛОЖЕНА В ЦЕНТРЕ ГОРОДА, ПОЭТОМУ СДЕЛАТЬ СТИЛЬНУЮ СТРИЖКУ МОЖНО В ЛЮБОЕ ВРЕМЯ, ДАЖЕ В ОБЕДЕННЫЙ ПЕРЕРЫВ. ЗДЕСЬ ВЫ МОЖЕТЕ ПОГРУЗИТЬСЯ В УДОБНУЮ ДЯЛ ВАС АТМОСФЕРУ, ЧУВСТВОВАТЬ СЕБЯ КОМФОРТНО И СВОБОДНО!</p></div>
+      </div> 
+    </div>
+    <footer class="main-footer">
+      <div class="wrapper clearfix">
+        <div class="footer-contacts column-left">
+          BARBERSHOP «BORODINSKI»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. СОБАКИ ПАВЛОВА, Д. 13<br>
+          <a href="#">КАК НАС НАЙТИ?</a><br>
+          ТЕЛЕФОН: +7 (495) 666-02-666
+        </div>
+        <div class="footer-social column-left">
+          <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+          <a href="#" class="social-btn social-btn-vk">ВКОНТАКТЕ</a>
+          <a href="#" class="social-btn social-btn-fb">ФЕЙСБУК</a>
+          <a href="#" class="social-btn social-btn-inst">ИНСТАГРАМ</a>
+        </div>
+        <div class="footer-copyright column-right">
+          <p>ДИЗАЙН САЙТА:</p>
+          <a href="#" class="btn">GLUKHARKO.RU</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

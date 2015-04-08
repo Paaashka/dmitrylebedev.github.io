@@ -1,0 +1,142 @@
+//````````````````````````````````````````
+//``¶¶¶¶````¶¶¶¶```¶¶```````¶¶¶¶```¶¶¶¶¶``
+//`¶¶``¶¶``¶¶``¶¶``¶¶``````¶¶``¶¶``¶¶``¶¶`
+//`¶¶``````¶¶``¶¶``¶¶``````¶¶``¶¶``¶¶¶¶¶``
+//`¶¶``¶¶``¶¶``¶¶``¶¶``````¶¶``¶¶``¶¶``¶¶`
+//``¶¶¶¶````¶¶¶¶```¶¶¶¶¶¶```¶¶¶¶```¶¶``¶¶`
+//````````````````````````````````````````
+
+@black:#000000;
+@white:#ffffff;
+
+@grey:#eeeeee;
+@grey-light:lighten(@grey,1.5%);
+@grey-dark:darken(@grey,10%);
+@grey-darkest:darken(@grey,27%);
+
+
+@blue:#81b3d2;
+@blue-dark:darken(@blue,5%);
+@blue-darkest:darken(@blue,10%);
+
+@brown:#766357;
+@brown-light:#cacaca;
+//````````````````````````````````
+//`¶¶¶¶¶¶``¶¶``¶¶``¶¶¶¶¶```¶¶¶¶¶¶`
+//```¶¶`````¶¶¶¶```¶¶``¶¶``¶¶`````
+//```¶¶``````¶¶````¶¶¶¶¶```¶¶¶¶```
+//```¶¶``````¶¶````¶¶``````¶¶`````
+//```¶¶``````¶¶````¶¶``````¶¶¶¶¶``
+//````````````````````````````````
+
+@font-family:"PT Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-size:14px;
+@font-size--nav-mobile:@font-size+4;
+@font-size--nav-tablet:@font-size;
+
+
+@font-size--h1:@font-size+4;
+@font-size--h2:@font-size+4;
+@font-size--h3:@font-size+7;
+
+@line-height:21px;
+@line-height--h1:@line-height+5;
+
+@font-weight:700;
+
+//````````````````````````````````````````
+//`¶¶¶¶¶```¶¶```````¶¶¶¶````¶¶¶¶```¶¶``¶¶`
+//`¶¶``¶¶``¶¶``````¶¶``¶¶``¶¶``¶¶``¶¶`¶¶``
+//`¶¶¶¶¶```¶¶``````¶¶``¶¶``¶¶``````¶¶¶¶```
+//`¶¶``¶¶``¶¶``````¶¶``¶¶``¶¶``¶¶``¶¶`¶¶``
+//`¶¶¶¶¶```¶¶¶¶¶¶```¶¶¶¶````¶¶¶¶```¶¶``¶¶`
+//````````````````````````````````````````
+
+@width:100%;
+
+//````````````````````````````````````````````````
+//``¶¶¶¶```¶¶¶¶¶¶``¶¶``¶¶``¶¶¶¶¶¶``¶¶¶¶¶````¶¶¶¶``
+//`¶¶``¶¶````¶¶````¶¶``¶¶``¶¶``````¶¶``¶¶``¶¶`````
+//`¶¶``¶¶````¶¶````¶¶¶¶¶¶``¶¶¶¶````¶¶¶¶¶````¶¶¶¶``
+//`¶¶``¶¶````¶¶````¶¶``¶¶``¶¶``````¶¶``¶¶``````¶¶`
+//``¶¶¶¶`````¶¶````¶¶``¶¶``¶¶¶¶¶```¶¶``¶¶```¶¶¶¶``
+//````````````````````````````````````````````````
+
+@img:"../img";
+
+
+
+//````````````````````````
+//`¶¶```¶¶`¶¶¶¶¶¶``¶¶``¶¶`
+//`¶¶¶`¶¶¶```¶¶`````¶¶¶¶``
+//`¶¶`¶`¶¶```¶¶``````¶¶```
+//`¶¶```¶¶```¶¶`````¶¶¶¶``
+//`¶¶```¶¶`¶¶¶¶¶¶``¶¶``¶¶`
+//````````````````````````
+
+.sprite-social() {
+  .bg {
+    background:url("@{img}/sprite-social.png") no-repeat;
+  }
+
+  .twitter {
+    background-position:0 0;
+  }
+
+  .fb {
+    background-position:-22px 0;
+  }
+
+  .youtube {
+    background-position:-35px 0;
+  }
+}
+
+.sprite-search-form() {
+  .bg {
+    background:url("@{img}/search-form-sprite.png") no-repeat;
+  }
+
+  .calendar {
+    background-position:0 0;
+  }
+
+  .minus {
+    background-position:-25px -8px;
+  }
+
+  .plus {
+    background-position:-39px -4px;
+  }
+}
+
+.main-nav-bg-mobile {
+  background:@blue;
+}
+
+.main-nav-bg-tablet {
+  background:@white;
+}
+
+.header-nav-color {
+  color:@white;
+}
+
+.main-nav-color-tablet {
+  color:@black;
+}
+
+.btn-search-bg {
+  background:@blue;
+}
+
+.btn-social-bg {
+  background:@blue;
+}
+
+
+
+.btn-search-color {
+  background:@white;;
+}

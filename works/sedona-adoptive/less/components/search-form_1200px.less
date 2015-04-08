@@ -1,0 +1,181 @@
+::-webkit-calendar-picker-indicator {
+  display:none; //убираем индикатор
+}
+
+::-webkit-inner-spin-button {
+  display:none; //убираем спин. как убрать clear в статье я не нашёл.
+}
+
+@media (min-width:1200px) {
+  .search {
+    padding:53px 41px 55px 53px;
+    width:568px;
+    margin-left:-284px;
+    box-sizing:border-box;
+    position:absolute;
+    left:50%;
+    z-index:100;
+    background:@white;
+
+    &__date-travel {
+      border:0;
+      padding:0;
+      margin:0 0 28px 0;
+      font-size:0;
+      position:relative;
+    }
+
+    &__date-arrival-text {
+      display:inline-block;
+      vertical-align:middle;
+      width:107px;
+      padding:5px 0 0 0;
+      margin:0 0 8px 0;
+      font-weight:700;
+      font-size:@font-size;
+      text-align:left;
+    }
+
+    &__date-departure-text {
+      display:inline-block;
+      vertical-align:middle;
+      width:107px;
+      padding:5px 0 0 0;
+      margin:0 0 10px 0;
+      font-weight:700;
+      font-size:@font-size;
+      text-align:left;
+    }
+
+    &__date-arrival-input {
+      outline:none;
+      -moz-box-sizing:border-box;
+           box-sizing:border-box;
+      width:350px;
+      padding:7px 2px 8px 15px;
+      border:2px solid #ffffff;
+      font-size:@font-size;
+      font-weight:bold;
+      position:relative;
+      color:#000000;
+      background:@grey-light;
+    }
+
+    .icon-calendar {
+      content:"";
+      width:20px;
+      min-height:22px;
+      position:absolute;
+      top:8px;
+      right:25px;
+    }
+
+    &__date-departure-input {
+      outline:none;
+      -moz-box-sizing:border-box;
+           box-sizing:border-box;
+      width:350px;
+      padding:7px 2px 8px 15px;
+      border:2px solid #ffffff;
+      font-size:@font-size;
+      font-weight:bold;
+      position:relative;
+      color:#000000;
+      background:@grey-light;
+    }
+
+    &__half-width {
+      display:inline-block;
+      vertical-align:middle;
+      margin:0 53px 55px 0;
+      padding:0;
+      border:0;
+      float:none;
+      text-align:left;
+
+
+      button {
+        width:38px;
+        min-height:38px;
+        float:none;
+        cursor:pointer;
+        display:inline-block;
+        vertical-align:top;
+        border:none;
+        outline:none;
+        position:relative;
+        color:#a9a9a9;
+        background:#f2f2f2;
+      }
+    }
+
+    &__half-width:nth-child(2n) {
+      margin-right:0;
+      float:none;
+    }
+
+    &__adult {
+      display:inline-block;
+      vertical-align:middle;
+      font-size:14px;
+      font-weight:bold;
+      text-align:left;
+      width:109px;
+      float:none;
+      padding:0;
+    }
+
+    &__children {
+      display:inline-block;
+      vertical-align:middle;
+      font-size:14px;
+      font-weight:bold;
+      text-align:left;
+      width:61px;
+      float:none;
+      padding:0;
+    }
+
+    &__adult-input {
+      font-size:14px;
+      font-weight:700;
+      line-height:26px;
+      display:inline-block;
+      width:38px;
+      min-height:38px;
+      padding:0;
+      text-align:center;
+      vertical-align:middle;
+      border:none;
+      outline:none;
+      background:#f2f2f2;
+      float:none;
+    }
+
+    &__chidren-input {
+      font-size:14px;
+      font-weight:700;
+      line-height:26px;
+      display:inline-block;
+      width:38px;
+      min-height:38px;
+      padding:0;
+      text-align:center;
+      vertical-align:middle;
+      border:none;
+      outline:none;
+      background:#f2f2f2;
+      float:none;
+    }
+
+    &__btn-search {
+      width:@width;
+      padding:15px 0;
+      border:none;
+      font-size:21px;
+      font-weight:bold;
+      color:@white;
+      .btn-search-bg();
+    }
+  }
+}

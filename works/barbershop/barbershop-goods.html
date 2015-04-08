@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Barbershop Borodinsky</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=latin,cyrillic-ext">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper clearfix">
+        <nav class="top-menu column-left">
+          <ul>
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li><a href="barbershop-text.html">ПРАЙС-ЛИСТ</a></li>
+            <li class="active"><a href="barbershop-goods.html">МАГАЗИН</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+        <div class="account-menu">
+          <a class="login" href="#">ВХОД</a>
+        </div>
+      </div>
+    </header>
+    <div class="modal-content">
+      <div class="modal-content-close">закрыть</div>
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+      <form class="login-form" action="/echo" method="post">
+        <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+        <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Запомните меня</label>
+        <a href="#" class="restore">Я забыл пароль!</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+    </div>
+    <div class="wrapper clearfix">
+      <div class="inner-page-title">
+      <h1 class="title-shop">СРЕДСТВА ДЛЯ УХОДА</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">ГЛАВНАЯ</a></li>
+          <li><a href="barbershop-goods.html">МАГАЗИН</a></li>
+          <li class="current"><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+        </ul>
+      </div>
+      <main class="pages-content clearfix">
+        <div class="column-25 column-left">
+          <form class="search-filter" action="/echo" method="post">
+              <fieldset class="brands">
+              <h2 class="index-column-title">ПРОИЗВОДИТЕЛИ</h2>
+                <label for="check1"><input type="checkbox" value="1" id="check1" checked><span></span>BAXTER OF CALIFORNIA</label>
+                <label for="check2"><input type="checkbox" value="2" id="check2"><span></span>MR NATTY</label>
+                <label for="check3"><input type="checkbox" value="3" id="check3" checked><span></span>SUAVECITO</label>
+                <label for="check4"><input type="checkbox" value="4" id="check4"><span></span>MALIN+GOETZ</label>
+                <label for="check5"><input type="checkbox" value="5" id="check5"><span></span>MURRAY'S</label>
+                <label for="check6"><input type="checkbox" value="6" id="check6" checked><span></span>AMERICAN CREW</label>
+              </fieldset>
+              <fieldset class="goods">
+              <h2 class="index-column-title">ГРУППЫ ТОВАРОВ</h2>
+                <label for="check7"><input type="radio" value="7" id="check7" name="radio" checked><span></span>БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+                <label for="check8"><input type="radio" value="8" id="check8" name="radio"><span></span>СРЕДСТВА ДЛЯ УХОДА</label>
+                <label for="check9"><input type="radio" value="9" id="check9" name="radio"><span></span>АКСЕССУАРЫ</label>
+              </fieldset>
+              <label class="btn-show"><input class="btn" type="submit" value="ПОКАЗАТЬ"></label>
+          </form>
+        </div>   
+        <div class="column-75 column-right">
+          <div class="catalog clearfix">
+            <div class="catalog-item">
+              <a href="barbershop-item.html" class="catalog-item-image"><img src="img/goods-1.jpg" alt="Набор для путешествий" width="220" height="165"></a>
+              <div class="catalog-item-description">
+                <h3 class="catalog-item-goods"><a href="#">Набор для путешествий</a></h3>
+                <h3 class="catalog-item-brands"><a href="#">«BAXTER OF CALIFORNIA»</a></h3>
+                <div class="actions">
+                    <span class="price">2 900 Руб.</span><a href="#" class="btn-buy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-item"> 
+              <a href="#" class="catalog-item-image"><img src="img/goods-2.jpg" alt="Увлажняющий кондиционер" width="220px" height="165px"></a>
+              <div class="catalog-item-description">
+                <h3 class="catalog-item-goods"><a href="#">Увлажняющий кондиционер</a></h3>
+                <h3 class="catalog-item-brands"><a href="#">«BAXTER OF CALIFORNIA»</a></h3>
+                <div class="actions">
+                    <span class="price">750 Руб.</span><a href="#" class="btn-buy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-item"> 
+              <a href="#" class="catalog-item-image"><img src="img/goods-3.jpg" alt="Гель для волос" width="220px" height="165px"></a>
+              <div class="catalog-item-description">
+                <h3 class="catalog-item-goods"><a href="#">Гель для волос</a></h3>
+                <h3 class="catalog-item-brands"><a href="#">«SAUVECITO»</a></h3>
+                <div class="actions">
+                    <span class="price">290 Руб.</span><a href="#" class="btn-buy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-item"> 
+              <a href="#" class="catalog-item-image"><img src="img/goods-4.jpg" alt="Глина для укладки волос" width="220px" height="165px"></a>
+              <div class="catalog-item-description">
+                <h3 class="catalog-item-goods"><a href="#">Глина для укладки волос</a></h3>
+                <h3 class="catalog-item-brands"><a href="#">«AMERICAN CREW»</a></h3>   
+                <div class="actions">
+                    <span class="price">500 Руб.</span><a href="#" class="btn-buy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-item"> 
+              <a href="#" class="catalog-item-image"><img src="img/goods-5.jpg" alt="Гель для волос" width="220px" height="165px"></a>
+              <div class="catalog-item-description">
+                <h3 class="catalog-item-goods"><a href="#">Гель для волос</a></h3>
+                <h3 class="catalog-item-brands"><a href="#">«AMERICAN CREW»</a></h3>
+                <div class="actions">
+                    <span class="price">300 Руб.</span><a href="#" class="btn-buy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-item"> 
+              <a href="#" class="catalog-item-image"><img src="img/goods-6.jpg" alt="Набор для бритья" width="220px" height="165px"></a>
+              <div class="catalog-item-description">
+                <h3 class="catalog-item-goods"><a href="#">Набор для бритья</a></h3>
+                <h3 class="catalog-item-brands"><a href="#">«BAXTER OF CALIFORNIA»</a></h3>
+                <div class="actions">
+                    <span class="price">3 900 Руб.</span><a href="#" class="btn-buy">КУПИТЬ</a>
+                </div>
+              </div>
+            </div>    
+          </div>
+          <ul class="pages clearfix">
+            <li><a href="#" class="btn-page">1</a></li>
+            <li><a href="#" class="btn-page active">2</a></li>
+            <li><a href="#" class="btn-page">3</a></li>
+            <li><a href="#" class="btn-page">4</a></li>
+          </ul>
+      </main>
+    </div>
+    <footer class="main-footer">
+      <div class="wrapper clearfix">
+        <div class="footer-contacts column-left">
+          BARBERSHOP «BORODINSKI»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. СОБАКИ ПАВЛОВА, Д. 13<br>
+          <a href="#">КАК НАС НАЙТИ?</a><br>
+          ТЕЛЕФОН: +7 (495) 666-02-666
+        </div>
+        <div class="footer-social column-left">
+          <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+          <a href="#" class="social-btn social-btn-vk">ВКОНТАКТЕ</a>
+          <a href="#" class="social-btn social-btn-fb">ФЕЙСБУК</a>
+          <a href="#" class="social-btn social-btn-inst">ИНСТАГРАМ</a>
+        </div>
+        <div class="footer-copyright column-right">
+          <p>ДИЗАЙН САЙТА:</p>
+          <a href="#" class="btn">GLUKHARKO.RU</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

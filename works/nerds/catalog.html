@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Nerds</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/styles.css' type='text/css'>
+</head>
+
+<body>
+    <header class='page-header page-header-catalog'>
+        <div class='wrapper clearfix'>
+            <!--Logo-->
+            <div class='header-logo col-left clearfix'>
+                <a href='index.html'><img src='img/logo.png' width='140' height='56' alt='Логотип'>
+                </a>
+            </div>
+            <!--Navogation+Cart-->
+            <div class='clearfix'>
+                <div class='main-menu-cart clearfix'>
+                    <nav class='main-menu'>
+                        <ul class='menu-list'>
+                            <li class='menu-item'><a href='index.html'>СТУДИЯ</a>
+                            </li>
+                            <li class='menu-item'><a href='#'>КЛИЕНТЫ</a>
+                            </li>
+                            <li class='menu-item active'><a href='catalog.html'>МАГАЗИН</a>
+                            </li>
+                            <li class='menu-item'><a href='#'>КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class='cart clearfix'>
+                        <a class='btn-basket' href='#'><i class='icon-basket'></i>КОРЗИНА</a>
+                    </div>
+                </div>
+            </div>
+            <!--Welcome-->
+            <div class='welcome clearfix'>
+                <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН<br> ГОТОВЫХ МАКЕТОВ!</h1>
+            </div>
+        </div>
+    </header>
+    <!--Form-->
+    <div class='write-us-popup'>
+        <a href='' class='write-us-popup-close btn-close btn-red'>&#215;</a>
+        <form action='/echo' method='post'>
+            <fieldset>
+                <div class='half-width'>
+                    <label>Ваше имя:</label>
+                    <input type='text' name='name' placeholder='ПРЕДСТАВЬТЕСЬ ПОЖАЛУЙСТА'>
+                </div>
+                <div class='half-width'>
+                    <label>Ваш e-mail:</label>
+                    <input type='email' name='email' placeholder='ДЛЯ ОТПРАВКИ ОТВЕТА'>
+                </div>
+                <label>Текст письма:</label>
+                <textarea name='comment' id='comment-field' rows='5' placeholder='В СВОБОДНОЙ ФОРМЕ'></textarea>
+                <div class='half-width'>
+                    <input type='submit' class='btn-red btn-sent' value='ОТПРАВИТЬ'>
+                </div>
+                <div class='half-width'>
+                    <input type='submit' class='btn-grey btn-cancel write-us-popup-cancel' value='ОТМЕНА'>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <!--Main-->
+    <main>
+        <div class='wrapper clearfix'>
+            <section class='col-27 col-left work-filter'>
+                <h3 class='price-title work-filter-title'>СТОИМОСТЬ:</h3>
+                <div class='range-filter'>
+                    <div class='range-controls'>
+                        <div class='scale'>
+                            <div style='width:75%;' class='bar'></div>
+                        </div>
+                        <div class='toggle min-toggle'></div>
+                        <div class='toggle max-toggle'></div>
+                    </div>
+                    <div class='price-controls'>
+                        от
+                        <input class='min-price' type='text' value='5 000'> до
+                        <input class='max-price' type='text' value='15 000'>
+                    </div>
+                </div>
+                <form class='search-filter' action='/echo' method='post'>
+                    <fieldset class='grid-filter'>
+                        <h3 class='work-filter-title'>СЕТКА:</h3>
+                        <input type='radio' id='radio' name='radio' checked>
+                        <label for='radio' class='icon-circle'>Адаптивная</label>
+                        <input type='radio' id='radio1' name='radio'>
+                        <label for='radio1' class='icon-circle'>Фиксированная</label>
+                        <input type='radio' id='radio2' name='radio'>
+                        <label for='radio2' class='icon-circle'>Резиновая</label>
+                    </fieldset>
+                    <fieldset class='feature-filter'>
+                        <h3 class='work-filter-title'>ОСОБЕННОСТИ:</h3>
+                        <input type='checkbox' id='check1' name='check1' checked>
+                        <label for='check1' class='icon-check-off'>Слайдер</label>
+                        <input type='checkbox' id='check2' name='check2'>
+                        <label for='check2' class='icon-check-off'>Блок преимуществ</label>
+                        <input type='checkbox' id='check3' name='check3' checked>
+                        <label for='check3' class='icon-check-off'>Новости</label>
+                        <input type='checkbox' id='check4' name='check4'>
+                        <label for='check4' class='icon-check-off'>Галерея</label>
+                        <input type='checkbox' id='check5' name='check5'>
+                        <label for='check5' class='icon-check-off'>Корзина</label>
+                    </fieldset>
+                    <label>
+                        <input type='submit' class='btn-grey btn-show' value='ПОКАЗАТЬ'>
+                    </label>
+                </form>
+            </section>
+            <section class='col-right catalog-sort'>
+                <div class='col-catalog-sort clearfix'>
+                    <div class='type-sort col-left'>
+                        <a href='#' class='sort-title'>СОРТИРОВАТЬ:</a>
+                        <a href='#' class='sort-active'>ПО ЦЕНЕ</a>
+                        <a href='#' class=''>ПО ТИПУ</a>
+                        <a href='#' class=''>ПО ФУНКЦИАНАЛУ</a>
+                    </div>
+                    <div class='type-dir col-right'>
+                        <a href='#' class='icon-down-dir dir-active'></a>
+                        <a href='#' class='icon-up-dir'></a>
+                    </div>
+                </div>
+                <div class='col-work-example clearfix'>
+                    <div class='work-example'>
+                        <a href='#' class='col-27 catalog-item'>
+                            <img src='img/catalog-image-1.jpg' alt='Пример работ' width='240' height='240'>
+                        </a>
+                        <div class='catalog-action'>
+                            <div class='catalog-action-title'>SUNSET</div>
+                            <p>Интернет магазин с личным кабинетом</p>
+                            <a href='#' class='btn btn-red btn-price'>10 000 Р.</a>
+                        </div>
+                    </div>
+                    <div class='work-example'>
+                        <a href='#' class='col-27 catalog-item'><img src='img/catalog-image-2.jpg' alt='Пример работ' width='240' height='240'>
+                        </a>
+                        <div class='catalog-action'>
+                            <div class='catalog-action-title'>SUNSET</div>
+                            <p>Интернет магазин с личным кабинетом</p>
+                            <a href='#' class='btn btn-red btn-price'>10 000 Р.</a>
+                        </div>
+                    </div>
+                    <div class='work-example'>
+                        <a href='#' class='col-27 catalog-item'><img src='img/catalog-image-3.jpg' alt='Пример работ' width='240' height='240'>
+                        </a>
+                        <div class='catalog-action'>
+                            <div class='catalog-action-title'>SUNSET</div>
+                            <p>Интернет магазин с личным кабинетом</p>
+                            <a href='#' class='btn btn-red btn-price'>10 000 Р.</a>
+                        </div>
+                    </div>
+                    <div class='work-example'>
+                        <a href='#' class='col-27 catalog-item'><img src='img/catalog-image-4.jpg' alt='Пример работ' width='240' height='240'>
+                        </a>
+                        <div class='catalog-action'>
+                            <div class='catalog-action-title'>SUNSET</div>
+                            <p>Интернет магазин с личным кабинетом</p>
+                            <a href='#' class='btn btn-red btn-price'>10 000 Р.</a>
+                        </div>
+                    </div>
+                    <div class='work-example'>
+                        <a href='#' class='col-27 catalog-item'><img src='img/catalog-image-5.jpg' alt='Пример работ' width='240' height='240'>
+                        </a>
+                        <div class='catalog-action'>
+                            <div class='catalog-action-title'>SUNSET</div>
+                            <p>Интернет магазин с личным кабинетом</p>
+                            <a href='#' class='btn btn-red btn-price'>10 000 Р.</a>
+                        </div>
+                    </div>
+                    <div class='work-example'>
+                        <a href='#' class='col-27 catalog-item'><img src='img/catalog-image-6.jpg' alt='Пример работ' width='240' height='240'>
+                        </a>
+                        <div class='catalog-action'>
+                            <div class='catalog-action-title'>SUNSET</div>
+                            <p>Интернет магазин с личным кабинетом</p>
+                            <a href='#' class='btn btn-red btn-price'>10 000 Р.</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class='pages'>
+                    <li><a href='#' class='btn-page active'>1</a>
+                    </li>
+                    <li><a href='#' class='btn-page'>2</a>
+                    </li>
+                    <li><a href='#' class='btn-page'>3</a>
+                    </li>
+                    <li><a href='#' class='btn-page next'>СЛЕДУЮЩАЯ</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <!--Map-->
+    <section class='map clearfix'>
+        <div id='map' class='map'></div>
+        <div class='wrapper clearfix'>
+            <div class='contact clearfix'>
+                <div class='contact-title'>NЁRDS DESIGN STUDIO</div>
+                <div class='contact-adress'>350000, Краснодар,
+                    <br> ул. Головатого, 100</div>
+                <div class='contact-tel'>тел. +7(861)275-75-75</div>
+                <a href='#' class='btn btn-red btn-write'>НАПИШИТЕ НАМ</a>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class='main-footer'>
+        <div class='wrapper clearfix'>
+            <div class='block-social col-27 col-left'>
+                <a href='http://vk.com' class='icon icon-vk'></a>
+                <a href='https://www.facebook.com' class='icon icon-facebook'></a>
+                <a href='https://instagram.com' class='icon icon-instagramm'></a>
+            </div>
+            <div class='block-discount col-right'>
+                <h2 class='discount-slogan discount'>Давайте дружить это выгодно!</h2>
+                <p class='discount-condition discount'>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </div>
+    </footer>
+    <script src='http://api-maps.yandex.ru/2.1/?lang=ru_RU' type='text/javascript'></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>

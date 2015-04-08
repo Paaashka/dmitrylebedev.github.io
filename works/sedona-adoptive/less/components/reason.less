@@ -1,0 +1,62 @@
+.reason {
+  margin-bottom:30px;
+
+  &__col--white {
+    padding:25px 30px 0 20px;
+    position:relative;
+    color:@black;
+    background:@white;
+  }
+
+  &__img {
+    max-width:37px;
+    height:35px;
+    float:left;
+  }
+
+  &__title {
+    margin:10px 0 17px 50px;
+    font-size:@font-size--h2;
+  }
+
+  &__number {
+    display:block;
+    margin:0 0 10px 0;
+  }
+
+  &__text {
+    margin:0 0 0 50px;
+  }
+
+  &__col--grey {
+    padding:32px 10% 0 10%;
+    text-align:center;
+    color:@black;
+    background:@grey;
+
+    .reason__title {
+      //если написать &__title - описание не работает
+      margin:0 0 10px 0;
+      font-size:@font-size--h2;
+    }
+
+    .reason__number {
+      //тоже самое
+      display:block;
+      margin:0 0 15px 0;
+    }
+
+    .reason__text {
+      //тоже самое
+      padding:0 0 27px 0;
+      margin:0;
+      border-bottom:1px solid @grey-dark;
+    }
+  }
+
+  &__col--grey:nth-child(3) {
+    .reason__text {
+      border-bottom:0;
+    }
+  }
+}

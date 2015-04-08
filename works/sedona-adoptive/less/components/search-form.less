@@ -1,0 +1,157 @@
+::-webkit-calendar-picker-indicator {
+  display:none; //убираем индикатор
+}
+
+::-webkit-inner-spin-button {
+  display:none; //убираем спин. как убрать clear в статье я не нашёл.
+}
+
+.search {
+  padding:26px 6% 48px 5%;
+  margin:0 auto;
+  width:@width;
+  box-sizing:border-box;
+  box-shadow:0 0 10px 0 #c8c8c8;
+
+  &__date-travel {
+    border:0;
+    padding:0;
+    margin:0 0 28px 0;
+    position:relative;
+  }
+
+  &__date-arrival-text {
+    display:block;
+    padding:0 0 0 15px;
+    margin:0 0 8px 0;
+    font-weight:@font-weight;
+    text-align:left;
+  }
+
+  &__date-departure-text {
+    display:block;
+    padding:0 0 0 15px;
+    margin:0 0 10px 0;
+    font-weight:@font-weight;
+    text-align:left;
+  }
+
+  &__date-arrival-input {
+    outline:none;
+    -moz-box-sizing:border-box;
+         box-sizing:border-box;
+    width:@width;
+    padding:7px 2px 8px 15px;
+    border:0;
+    font-weight:bold;
+    position:relative;
+    color:#000000;
+    background:@grey-light;
+  }
+
+  .icon-calendar {
+    content:"";
+    width:20px;
+    min-height:22px;
+    position:absolute;
+    top:36px;
+    right:12px;
+  }
+
+  &__date-departure-input {
+    outline:none;
+    -moz-box-sizing:border-box;
+         box-sizing:border-box;
+    width:@width;
+    padding:7px 2px 8px 15px;
+    border:0;
+    font-weight:bold;
+    position:relative;
+    color:#000000;
+    background:@grey-light;
+  }
+
+  &__half-width {
+    display:inline-block;
+    vertical-align:top;
+    float:left;
+    padding:0;
+    margin:0 50px 42px 0;
+    border:0;
+
+    button {
+      outline:none;
+      cursor:pointer;
+      vertical-align:top;
+      float:left;
+      display:block;
+      width:38px;
+      min-height:38px;
+      border:none;
+      position:relative;
+      color:#a9a9a9;
+      background:#f2f2f2;
+    }
+  }
+
+  &__half-width:nth-child(2n) {
+    margin-right:0;
+    float:right;
+  }
+
+  &__adult {
+    display:block;
+    padding:0 0 0 13%;
+    margin:0 0 10px 0;
+    font-weight:@font-weight;
+    text-align:left;
+  }
+
+  &__children {
+    display:block;
+    padding:0 0 0 9%;
+    margin:0 0 10px 0;
+    font-weight:@font-weight;
+    text-align:left;
+  }
+
+  &__adult-input {
+    outline:none;
+    display:inline-block;
+    vertical-align:middle;
+    float:left;
+    width:38px;
+    min-height:38px;
+    padding:0;
+    border:none;
+    font-size:@font-size;
+    font-weight:@font-weight;
+    text-align:center;
+    background:#f2f2f2;
+  }
+
+  &__chidren-input {
+    outline:none;
+    display:inline-block;
+    vertical-align:middle;
+    float:left;
+    width:38px;
+    min-height:38px;
+    padding:0;
+    border:none;
+    font-size:@font-size;
+    font-weight:@font-weight;
+    text-align:center;
+    background:#f2f2f2;
+  }
+
+  &__btn-search {
+    width:@width;
+    padding:15px 0;
+    border:none;
+    font-size:21px;
+    font-weight:bold;
+    color:@white;
+    .btn-search-bg();
+  }
+}

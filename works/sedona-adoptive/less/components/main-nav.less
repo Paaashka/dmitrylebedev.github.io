@@ -1,0 +1,115 @@
+.main-nav {
+  position:relative;
+  padding-bottom:58px;
+
+  &__list {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    display:none;
+  }
+
+  &__item {
+    border-bottom:1px solid #678fa8;
+    font-size:0;
+
+    a {
+      display:inline-block;
+      vertical-align:top;
+      padding:20px 0 14px 0;
+      width:@width;
+      font-weight:bold;
+      font-size:@font-size--nav-mobile;
+
+      .header-nav-color();
+      .main-nav-bg-mobile();
+    }
+
+    a:hover {
+      color:@white;
+      background:@blue-dark;
+    }
+      a:active {
+        color:@blue-dark;
+        background:@blue-darkest;
+      }
+  }
+
+  &__logo {
+    display:inline-block;
+    vertical-align:top;
+    margin-left:-33px;
+    z-index:10;
+    position:absolute;
+    left:50%;
+
+    img {
+      z-index:9;
+      position:relative;
+    }
+  }
+
+  &__logo-triangle {
+    position:absolute;
+    margin-left:-70px;
+    left:50%;
+    top:0;
+
+    .form-logo-triangle {
+      fill:@blue;
+    }
+  }
+
+  &__toggle {
+    position:absolute;
+    top:15px;
+    right:20px;
+    width:35px;
+    height:23px;
+  }
+
+  &__toggle span,
+  &__toggle span:before,
+  &__toggle span:after {
+    cursor:pointer;
+    border-radius:1px;
+    height:3px;
+    width:35px;
+    background:@blue;
+    position:absolute;
+    display:block;
+    content:"";
+    top:10px;
+  }
+
+  &__toggle span:before {
+    top:-10px;
+  }
+  &__toggle span:after {
+    bottom:-15px;
+  }
+
+  &__toggle span,
+  &__toggle span:before,
+  &__toggle span:after {
+    transition:all 600ms ease-in-out;
+  }
+  &__toggle.active span {
+    background-color:transparent;
+  }
+  &__toggle.active span:before,
+  &__toggle.active span:after {
+    top:0;
+    background:@white;
+  }
+  &__toggle.active span:before {
+    transform:rotate(45deg);
+  }
+  &__toggle.active span:after {
+    transform:rotate(-45deg);
+  }
+  .open {
+    display:block;
+  }
+}

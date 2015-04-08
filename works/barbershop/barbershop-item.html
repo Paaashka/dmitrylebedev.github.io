@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Barbershop Borodinsky</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=latin,cyrillic-ext">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper clearfix">
+        <nav class="top-menu column-left">
+          <ul>
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="#">ИНФОРМАЦИЯ</a></li>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li><a href="barbershop-text.html">ПРАЙС-ЛИСТ</a></li>
+            <li class="active"><a href="barbershop-goods.html">МАГАЗИН</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+        <div class="account-menu">
+          <a class="login" href="#">ВХОД</a>
+        </div>
+      </div>
+    </header>
+      <div class="modal-content">
+        <div class="modal-content-close">закрыть</div>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль.</p>
+        <form class="login-form" action="/echo" method="post">
+          <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+          <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+          <input type="checkbox" name="remember" id="remember-me">
+          <label for="remember-me">Запомните меня</label>
+          <a href="#" class="restore">Я забыл пароль!</a>
+          <button type="submit" class="btn">Войти</button>
+        </form>
+      </div>
+    <main class="pages-content">
+      <div class="wrapper clearfix">
+        <div class="inner-page-title">
+          <h1 class="item-title">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</h1>
+          <ul class="breadcrumbs">
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="barbershop-goods.html">МАГАЗИН</a></li>
+            <li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+            <li class="current"><a href="#">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</a></li>
+          </ul>
+        </div>
+        <div class="item-photo column-left">
+          <a href="#" class="item-big"><img src="img/item-photo1.jpg" alt="Набор для путешествий" width="460" height="498"></a>
+          <a href="#" class="item-small"><img src="img/item-photo2.jpg" alt="Набор для путешествий" width="140" height="149"></a>
+          <a href="#" class="item-small"><img src="img/item-photo3.jpg" alt="Набор для путешествий" width="140" height="149"></a>
+          <a href="#" class="item-small"><img src="img/item-photo4.jpg" alt="Набор для путешествий" width="140" height="149"></a>
+        </div>   
+        <div class="item-column column-right">
+          <div class="status clearfix">
+            <span class="in-stock column-left">ЕСТЬ В НАЛИЧИИ</span>
+            <span class="stock-number column-right">АРТИКУЛ:DEXTER-AE</span>
+          </div>
+          <p class="description">TRAVEL KIT - НЕОБХОДИМЫЙ АКСЕССУАР ВО ВРЕМЯ ЛЮБОГО ПУТЕШЕСТВИЯ. В АККУРАТНОЙ КОЖАНОЙ СУМКЕ НАХОДИТСЯ ВСЕ, ЧТО НУЖНО ДЛЯ БРИТЬЯ И УХОДА ЗА КОЖЕЙ ВО ВРЕМЯ РАБОЧЕЙ ПОЕЗДКИ ИЛИ ОТДЫХА: СРЕДСТВО ДЛЯ УМЫВАНИЯ, УВЛАЖНЯЮЩИЙ КРЕМ, КРЕМ ДЛЯ БРИТЬЯ, КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ. НАБОР ТАКЖЕ МОЖЕТ СТАТЬ ОТЛИЧНЫМ ПОДАРКОМ.
+          </p>
+          <div class="actions">
+            <span class="price">2 900 Руб.</span><a href="#" class="btn buy">Купить</a>
+          </div>
+          <p class="content-title">В НАБОР ВХОДЯТ:</p>
+          <ul class="consist-list">
+            <li>СРЕДСТВО ДЛЯ УМЫВАНИЯ (50 МЛ)</li>
+            <li>УВЛАЖНЯЮЩИЙ КРЕМ (50 МЛ)</li>
+            <li>КРЕМ ДЛЯ БРИТЬЯ (50 МЛ)</li>
+            <li>КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ (50 МЛ)</li>
+            <li>УДОБНАЯ КОЖАНАЯ КОСМЕТИЧКА</li>
+          </ul>
+        </div> 
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="wrapper clearfix">
+        <div class="footer-contacts column-left">
+          BARBERSHOP «BORODINSKI»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. СОБАКИ ПАВЛОВА, Д. 13<br>
+          <a href="#">КАК НАС НАЙТИ?</a><br>
+          ТЕЛЕФОН: +7 (495) 666-02-666
+        </div>
+        <div class="footer-social column-left">
+          <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+          <a href="#" class="social-btn social-btn-vk">ВКОНТАКТЕ</a>
+          <a href="#" class="social-btn social-btn-fb">ФЕЙСБУК</a>
+          <a href="#" class="social-btn social-btn-inst">ИНСТАГРАМ</a>
+        </div>
+        <div class="footer-copyright column-right">
+          <p>ДИЗАЙН САЙТА:</p>
+          <a href="#" class="btn">GLUKHARKO.RU</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

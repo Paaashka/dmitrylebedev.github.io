@@ -1,0 +1,71 @@
+@media (min-width:1200px) {
+  .reason-photo:nth-child(1):before {
+    display:none;
+  }
+
+  .reason-photo:nth-child(1) {
+    padding-top:0;
+  }
+
+  .reason-photo {
+    position:relative;
+    font-size:0;
+    background:@blue;
+
+    &__col-blue {
+      display:inline-block;
+      vertical-align:top;
+      padding:56px 5% 40px 5%;
+      box-sizing:border-box;
+      height:256px;
+      text-align:center;
+      width:33.3334%;
+      background:#81b3d2;
+    }
+
+    &__col-blue--right {
+      float:right;
+    }
+
+    &__title {
+      margin:0 0 12px 0;
+      padding:0 23%;
+      font-size:21px;
+      line-height:26px;
+    }
+
+    &__number {
+      display:block;
+      margin:0 0 19px 0;
+      font-size:@font-size;
+    }
+
+    &__text {
+      margin:0;
+      font-size:@font-size;
+    }
+
+    &__col-img-house {
+      display:inline-block;
+      vertical-align:middle;
+      width:66.6667%;
+      min-height:256px;
+      background:url("@{img}/photo-city@1x.jpg");
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:100%;
+    }
+
+    &__col-img-desert {
+      display:inline-block;
+      vertical-align:middle;
+      min-height:256px;
+      width:66.6667%;
+      background:url("@{img}/photo-bridge@1x.jpg");
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:100%;
+      float:left;
+    }
+  }
+}
